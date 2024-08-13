@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Table with Pagination</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <div class="table-container">
+        <h1>User Data</h1>
+        
+        <div>
+            <label for="rowCount">Number of rows per page</label>
+            <input type="number" id="rowCount" min="1" value="10">
+            <button id="fetchButton">Fetch Data</button>
+            <button id="addUserButton">Add User</button>
+            <button onclick="logout()">Logout</button>
+        </div>
+        <table id="userTable">
+            <thead>
+                <tr>
+                    <th>Picture</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Location</th>
+                    <th>Phone</th>
+                    <th>Cell</th>
+                    <th>Date of Birth</th>
+                    <th>Nationality</th>
+                    <th>Action</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <!-- my dynamic table body -->
+            </tbody>
+        </table>
+        <div class="pagination">
+            <div id="pageInfo"></div>
+            <div id="paginationControls"></div>
+        </div>
+    </div>
+    <script  src="index.js"></script></body>
+    <script src="auth.js"></script>
+
+</html>
