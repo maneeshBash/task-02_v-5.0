@@ -73,6 +73,12 @@ a:hover {
     max-width: 95%;
     margin: 0 auto;
 }
+#addUserButton{
+    margin-right: 500px;
+}
+#logoutButton{
+    margin-left: 500px;
+}
 
 #userTable {
     width: 100%;
